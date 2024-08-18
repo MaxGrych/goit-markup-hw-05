@@ -647,9 +647,30 @@
             </li>
           </ul>
         </div>
+        <div class="footer-subscribe">
+          <p class="footer-web-social">Subscribe</p>
+          <form class="form-subscribe">
+            <label class="form-subscribe-label" for="email-footer">
+              <input
+                class="footer-input"
+                type="email"
+                name="email-footer"
+                id="email-footer"
+                placeholder="E-mail"
+              />
+            </label>
+            <button class="footer-button" type="submit">
+              Subscribe
+              <svg class="footer-button-svg" width="24" height="24">
+                <use href="./images/icons.svg#icon-send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!-- #endregion footer -->
+
     <div class="modal-overlay">
       <div class="modal">
         <button class="modal-button-close" type="button">
@@ -658,28 +679,81 @@
           </svg>
         </button>
         <p class="modal-title">Leave your contacts and we will call you back</p>
-        <form class="form-contct">
+        <form class="form-contact">
           <div class="form-container">
-            <label for="user-name" class="modal-label">Name</label>
+            <label for="user-name" class="user-label">Name</label>
+            <div class="container-input">
+              <input
+                class="user-info"
+                type="text"
+                id="user-name"
+                name="user-name"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-person"></use>
+              </svg>
+            </div>
           </div>
+          <div class="form-container">
+            <label class="user-label" for="user-phone">Phone</label>
+            <div class="container-input">
+              <input
+                class="user-info"
+                type="tel"
+                id="user-phone"
+                name="user-phone"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-tel"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-container">
+            <label class="user-label" for="user-email">Email</label>
+            <div class="container-input">
+              <input
+                class="user-info"
+                type="email"
+                id="user-email"
+                name="user-email"
+              />
+              <svg class="input-icon" width="18" height="24">
+                <use href="./images/icons.svg#icon-mail"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="form-container-comment">
+            <label class="user-label" for="user-comment">Comment</label>
+            <textarea
+              class="user-comment"
+              name="user-comment"
+              id="user-comment"
+              cols="30"
+              rows="10"
+              placeholder="Text input"
+            ></textarea>
+          </div>
+          <div class="checkbox">
+            <input
+              class="visually-hidden"
+              name="user-privacy"
+              type="checkbox"
+              id="user-privacy"
+              value="true"
+            />
+            <label class="checkbox-label" for="user-privacy">
+              <span class="checkbox-span">
+                <svg class="checkbox-svg" width="10" height="8">
+                  <use href="./images/icons.svg#icon-check"></use>
+                </svg>
+              </span>
+              I accept the terms and conditions of the
+              <a class="privacy">Privacy Policy</a>
+            </label>
+          </div>
+          <button class="form-button" type="submit">Send</button>
         </form>
       </div>
     </div>
   </body>
 </html>
-
-<!-- <form action="">
-  <label for="user-name" class="modal-label">Name</label>
-  <input class="modal-input" type="text" name="user-name" id="user-name" />
-  <label for="user-tel" class="modal-label">Phone</label>
-  <input class="modal-input" type="tel" name="user-tel" id="user-tel" />
-  <label for="user-email" class="modal-label">Email</label>
-  <input class="modal-input" type="email" name="user-email" id="user-email" />
-  <label for="user-comment" class="modal-label">Comment</label>
-  <textarea
-    class="modal-input modal-input-text"
-    name="user-comment"
-    id="user-comment"
-    placeholder="Text input"
-  ></textarea>
-</form> -->
